@@ -1,8 +1,8 @@
-/* Estilos de pagina de viajes */
+/* Estilos de pagina de viajes 
 *{
     outline: solid black;
 }
-
+*/
 body { /* Seleccion de body */
 font-family: Arial, sans-serif ; /* Cambia tipografias*/
 margin: 0; /* Elimina todo el margen predefinido */
@@ -32,4 +32,26 @@ margin-right: 20px; /* margen hacia la derecha */
 nav ul li a {
     color:#fff;
     text-decoration: none; /* quita subrayado de enlace */
+}
+
+section {
+    padding: 40px 0; /* añade relleno superior e inferior */
+}
+
+#banner{
+    background-image: url('https://administrador.blog.amway.com.mx/media/news/Amway_FotosBlog_Nota191500X500_UJ7GkQg.jpg') ; /* Establece la imagen del fondo del banner*/
+
+    background-size: cover; /* ajusta la imagen en el area del banner*/
+    text-align: center; /* centra el texto del banner*/
+    padding: 100px 0; /* define relleno superior e inferior*/
+}
+#banner h2 {
+    font-size: 36px; /* establece tamaño de h2 */
+    margin-bottom: 20px; /* define margen inferior*/
+}
+
+.btn {
+    background-color: #fff; /* color fondo boton*/
+    color: #fff; /* colot del texto boton*/
+    padding: 10px 20px; /* relleno del boton*/
 }
