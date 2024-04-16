@@ -1,80 +1,91 @@
-/* Estilos de pagina de viajes  
- /* Selección de body */
+/* Estilos de pagina de viajes 
 *{
-    outline: solid rgb(255, 255, 255);
-}
-*/
-body {font-family:Arial, sans-serif ; /* Cambia tipografia */
-    margin: 0; /* Elimina todo el margen predefinido */
+    outline: solid black;
+}*/
+/* Seleccion de body */
+body { 
+    font-family: Arial, Helvetica, sans-serif; /* Cambia tipografia */
+    margin: 0; /* Elimina todo  el margen predefinido */
     padding: 0; /* Elimina todo el relleno de los elementos */
-}/* A viene el estilo de una clase container */
-.container {    
-    width: 80%; /* Establece el ancho del contenedor en un 80% */    
-    margin: 0 auto; /* Centra horizontalmente el contenedor */
+}
+/* Acá viene el estilo de una clase container */
+.container {
+    width: 80%; /* Establece el ancho del contenedor en un 80% */
+    margin: 0 auto; /* Centra horizontalmente elemento */ 
 }
 /* Estilo de encabezado */
-header {    
-    background-color: #333; /* Establece el color de fondo */    
-    color: #fff; /* Establece el color del texto */   
+header {
+    background-color: #333; /* Establece el color de fondo */
+    color: beige; /* Establece el color del texto */
     padding: 20px 0; /* Añade relleno superior e inferior */
 }
-header h1{    margin: 0; /* Elimina el margen por defecto del título */
+header h1 {
+    margin: 0; /* Elimina todo  el margen predefinido del título */
 }
 /* Estilo de elemento de lista */
-nav ul li {    
-    display:inline; /* Alinea los elementos */    
+nav ul li {
+    display: inline; /* Alinea lo selementos */
     margin-right: 20px; /* Margen hacia la derecha */
 }
-/* Estilo a elementos de vinculo ancla de navegacion */
-nav ul li a{
-    color:#fff; /* Color a elemento Anchor */
-    text-decoration: none; /* Quita subrayado de enlaces */
+/* Estilo a elementos de vínculo ancla de navegacion */
+nav ul li a {
+    color: beige; /* Color a elemento anchor */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
 }
-
 section {
-    padding: 40px 0; /* Añade relleno superior e inferior  */
+    padding: 40px 0; /* Añade relleno superior e inferior */
 }
-
-#banner{
-    background-image: url('https://blog.nmviajes.com/wp-content/uploads/2018/10/iStock_000025713973Medium-1500x500.jpg');/*Establece la imagen de fondo del banner*/
-    background-size: cover; /* Ajusta la imagen al área del banner */
+#banner {
+    background-image: url('https://www.globalia.com/wp-content/uploads/2020/03/avion-vuelos-menos-contaminantes-globalia-wakalua-1500x500.jpg'); /* Establece laimagen de fondo del banner */
+    background-size: cover; /* ajusta la imagen al área del banner */
     color: #fff; /* Establece color del texto */
-    text-align: center; /* Centra el texto del banner*/
-    padding: 50px 0; /* Define relleno superior e inferior */
+    text-align: center; /* Centra el texto del banner */
+    padding: 100px 0; /* Define relleno superior e inferior */
 }
-#banner h2{
+#banner h2 {
     font-size: 36px; /* Establece tamaño de h2 */
+    color: black;
 }
-#banner p{
+#banner p {
     font-size: 18px; /* Establece tamaño de p */
-    margin-bottom: 20px; /* Define margen inferior*/
+    margin-bottom: 20px; /* Define margen inferior */
+    color: black;
 }
-
-.btn{
-    background-color: #007bff; /* Color fondo boton */
-    color: #fff; /* Color del texto del boton */
-    padding: 10px 20px; /* Relleno del boton */
-    text-decoration: none; /* Quita decoración de enlace*/
-    }
-/* Estilo cuando pasa puntero sobre el boton */
+.btn {
+    background-color: beige; /* Color de fondo del botón */
+    color: darkcyan; /* Color del texto del botón */
+    padding: 10px 20px; /* Relleno del botón */
+    text-decoration: none; /* Quita decoración del enlace */
+    border-radius: 20px;
+}
+/* Estilo cuando pasa elpuntero sobre el botón */
 .btn:hover {
-    background-color: #0056b3; /* Establece color de fondo en hover boton */
-    }
-
-.destinos-container { 
-
+    background-color: lightsteelblue; /* Establece color de fondo en hover del botón */
+}
+.destinos-conteiner {
+    display: flex; /* Coloca las cajas como si fueran celdas de tablas */
+    justify-content: space-between; /* Distribuye uniformemente los elementos */
+    flex-wrap: wrap; /* Si los elementos no caben en la misma linea los ajusta en una linea aparte abajo de la otra */
+}
+.destino {
+    width: calc(33.33% - 20px); /* Establece el ancho de cada destino menos el espacio entre los destinos */
+    margin-bottom: 20px; /* Define el margen inferior */
+    text-align: center; /* Centra el texto */
+}
+.destino img {
+    width: 100%; /* Establece el ancho de la imagen, ajustándola al contenedor */
+    border-radius: 10px; /* Redondea los bordes */
+}
+.destino h3 {
+    margin-top: 10px; /* Distancia entre imagen y h3 */
+}
+.destino p {
+    margin-top: 10px; /* Distancia superior entre h3 y p */
 }
 
-.destino {
-    width: calc(33.33% - 20px); /* establece el ancho de cada destino menos el espacio entre los destinos */
-    margin-bottom: 20px; /* define el margen inferior*/
-    text-align: center; /* centra el texto */}
-.destino img {
-        width: 100%; /* establece el ancho de la imagen*/
-    }
 footer {
-    background-color: #333; /* Establece color fondo de footer */
+    background-color: #333; /* Establece color de fondo del footer */
     color: #fff; /* Establece color de texto de footer */
-    text-align: center; /* Centra el texto */
-    padding: 20px 0; /* Añade relleno superior e inferior*/
-        }
+    text-align: center; /* Centra el texto de footer */
+    padding: 20px 0; /* Relleno del footer */
+}
