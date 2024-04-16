@@ -1,57 +1,80 @@
-/* Estilos de pagina de viajes 
+/* Estilos de pagina de viajes  
+ /* Selección de body */
 *{
-    outline: solid black;
+    outline: solid rgb(255, 255, 255);
 }
 */
-body { /* Seleccion de body */
-font-family: Arial, sans-serif ; /* Cambia tipografias*/
-margin: 0; /* Elimina todo el margen predefinido */
-padding: 0; /*Elimina todo el relleno del elemento */
+body {font-family:Arial, sans-serif ; /* Cambia tipografia */
+    margin: 0; /* Elimina todo el margen predefinido */
+    padding: 0; /* Elimina todo el relleno de los elementos */
+}/* A viene el estilo de una clase container */
+.container {    
+    width: 80%; /* Establece el ancho del contenedor en un 80% */    
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
 }
-/* aca viene el estilo de una clase container */
-.container {
-    width: 80%; /* establece el ancho del contenedor en un 80% */
-    margin: 0 auto; /* centra horizontalmente el contenedor */
+/* Estilo de encabezado */
+header {    
+    background-color: #333; /* Establece el color de fondo */    
+    color: #fff; /* Establece el color del texto */   
+    padding: 20px 0; /* Añade relleno superior e inferior */
 }
-/* estilo de emcabezados */
-header {
-    background-color: #333; /* establece el color del fondo */
-    color: #fff; /* establece el color del textp */
-    padding: 20px 0; /* añade relleno superior e inferior */
+header h1{    margin: 0; /* Elimina el margen por defecto del título */
 }
-
-header h1 {
-    margin: 0; /* elimina el margen por defecto del titulo */
+/* Estilo de elemento de lista */
+nav ul li {    
+    display:inline; /* Alinea los elementos */    
+    margin-right: 20px; /* Margen hacia la derecha */
 }
-/* estilo de elemento de lista */ 
-nav ul li {
-display:inline; /* alinea los elementos */
-margin-right: 20px; /* margen hacia la derecha */
-}
-/* estilo a elementos de vinculo ancla de navegacion */
-nav ul li a {
-    color:#fff;
-    text-decoration: none; /* quita subrayado de enlace */
+/* Estilo a elementos de vinculo ancla de navegacion */
+nav ul li a{
+    color:#fff; /* Color a elemento Anchor */
+    text-decoration: none; /* Quita subrayado de enlaces */
 }
 
 section {
-    padding: 40px 0; /* añade relleno superior e inferior */
+    padding: 40px 0; /* Añade relleno superior e inferior  */
 }
 
 #banner{
-    background-image: url('https://administrador.blog.amway.com.mx/media/news/Amway_FotosBlog_Nota191500X500_UJ7GkQg.jpg') ; /* Establece la imagen del fondo del banner*/
+    background-image: url('https://blog.nmviajes.com/wp-content/uploads/2018/10/iStock_000025713973Medium-1500x500.jpg');/*Establece la imagen de fondo del banner*/
+    background-size: cover; /* Ajusta la imagen al área del banner */
+    color: #fff; /* Establece color del texto */
+    text-align: center; /* Centra el texto del banner*/
+    padding: 50px 0; /* Define relleno superior e inferior */
+}
+#banner h2{
+    font-size: 36px; /* Establece tamaño de h2 */
+}
+#banner p{
+    font-size: 18px; /* Establece tamaño de p */
+    margin-bottom: 20px; /* Define margen inferior*/
+}
 
-    background-size: cover; /* ajusta la imagen en el area del banner*/
-    text-align: center; /* centra el texto del banner*/
-    padding: 100px 0; /* define relleno superior e inferior*/
-}
-#banner h2 {
-    font-size: 36px; /* establece tamaño de h2 */
-    margin-bottom: 20px; /* define margen inferior*/
+.btn{
+    background-color: #007bff; /* Color fondo boton */
+    color: #fff; /* Color del texto del boton */
+    padding: 10px 20px; /* Relleno del boton */
+    text-decoration: none; /* Quita decoración de enlace*/
+    }
+/* Estilo cuando pasa puntero sobre el boton */
+.btn:hover {
+    background-color: #0056b3; /* Establece color de fondo en hover boton */
+    }
+
+.destinos-container { 
+
 }
 
-.btn {
-    background-color: #fff; /* color fondo boton*/
-    color: #fff; /* colot del texto boton*/
-    padding: 10px 20px; /* relleno del boton*/
-}
+.destino {
+    width: calc(33.33% - 20px); /* establece el ancho de cada destino menos el espacio entre los destinos */
+    margin-bottom: 20px; /* define el margen inferior*/
+    text-align: center; /* centra el texto */}
+.destino img {
+        width: 100%; /* establece el ancho de la imagen*/
+    }
+footer {
+    background-color: #333; /* Establece color fondo de footer */
+    color: #fff; /* Establece color de texto de footer */
+    text-align: center; /* Centra el texto */
+    padding: 20px 0; /* Añade relleno superior e inferior*/
+        }
