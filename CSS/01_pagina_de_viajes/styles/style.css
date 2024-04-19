@@ -62,7 +62,7 @@ section {
 .btn:hover {
     background-color: lightsteelblue; /* Establece color de fondo en hover del botón */
 }
-.destinos-conteiner {
+.destinos-container {
     display: flex; /* Coloca las cajas como si fueran celdas de tablas */
     justify-content: space-between; /* Distribuye uniformemente los elementos */
     flex-wrap: wrap; /* Si los elementos no caben en la misma linea los ajusta en una linea aparte abajo de la otra */
@@ -88,4 +88,48 @@ footer {
     color: #fff; /* Establece color de texto de footer */
     text-align: center; /* Centra el texto de footer */
     padding: 20px 0; /* Relleno del footer */
+}
+/* Aqui va el estilo del formulario de contacto*/
+
+#contacto {
+    padding:40px 0; 
+}
+#contacto .container {
+    text-align: center;
+}
+
+#contacto h2 {
+    margin-bottom: 20px;
+}
+#contacto form {
+    max-width: 500px; /* establece el ancho maximo del elemento formulario */
+    margin: 0 auto; /* centra horizontalmente dentro del contenedor */
+    padding: 20px;
+    background-color: gray;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba( 0, 0, 0, 1) /* establece una sobra al borde */
+}
+#contacto label {
+    display: block; /* Etiquetas en bloques */
+    margin-bottom: 10px;
+    font-weight: bold; /* estanlece fuente en negrita */
+}
+#contacto input, #contacto textarea {
+    width: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-sizing: border-box; /* incluye el padding y el borde del ancho dentro del elemento que lo contiene */
+    
+
+}
+#contacto textarea {
+
+resize: vertical; /* permite redimentisionar el area del texto verticalmente */
+}
+#destinos
+
+.destinos-container{
+    display: flex;
 }
