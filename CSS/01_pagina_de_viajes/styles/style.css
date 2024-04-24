@@ -1,7 +1,8 @@
 /* Estilos de pagina de viajes 
 *{
     outline: solid black;
-}*/
+}
+*/
 /* Seleccion de body */
 body { 
     font-family: Arial, Helvetica, sans-serif; /* Cambia tipografia */
@@ -75,6 +76,7 @@ section {
 .destino img {
     width: 100%; /* Establece el ancho de la imagen, ajustándola al contenedor */
     border-radius: 10px; /* Redondea los bordes */
+    
 }
 .destino h3 {
     margin-top: 10px; /* Distancia entre imagen y h3 */
@@ -115,6 +117,7 @@ footer {
     font-weight: bold; /* estanlece fuente en negrita */
 }
 #contacto input, #contacto textarea {
+    resize: vertical;
     width: 100px;
     padding: 10px;
     margin-bottom: 20px;
